@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/widgets/drawer.dart';
 
+//Day11 was about constraints and contexts
 class HomePage extends StatelessWidget {
   int days = 30;
   String name = "Chetan";
@@ -13,10 +14,8 @@ class HomePage extends StatelessWidget {
           "Catalog App",
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text("Welcome to # $days OfFlutter by $name"),
-        ),
+      body: Container(
+        child: Text("Welcome to $days days of flutter by $name"),
       ),
       drawer: MyDrawer(),
     );
